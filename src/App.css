@@ -1,0 +1,54 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #D4ADFC;
+  border-radius: 25px;
+  box-shadow:0px 0px 100px #D4ADFC;
+}
+.fileInput{
+  padding-top: 20px;
+  align-self: center;
+  color: transparent;
+  padding-left: 25%;
+}
+.result{
+  padding-top: 20px;
+  align-self: center;
+  color: #1D267D;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+.fileInput::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.fileInput::before {
+  content: 'Select some files';
+  color: #D4ADFC;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #1D267D, #1D267D);
+  border: 1px solid #1D267D;
+  border-radius: 10px;
+  padding: 5px 8px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  text-shadow: 1px 1px #1D267D;
+  font-weight: 700;
+  font-size: 10pt;
+}
+.fileInput:hover::before {
+  border-color: black;
+}
+.fileInput:active {
+  outline: 0;
+}
+.fileInput:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+}
